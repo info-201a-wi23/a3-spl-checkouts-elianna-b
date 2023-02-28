@@ -41,25 +41,16 @@ This chart visually represents the trends in total checkouts per year, and compa
 
 ### Second Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+I included this chart to visualize the popularity of each Harry Potter book over time. The chart shows the total number of checkouts for each book from 2017 to 2023, which is useful for libraries or booksellers who want to understand which books are still in demand.
 
-The second chart that you will create and include will show another trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+One pattern that emerged from the chart is that the earlier books in the series (Sorcerer's Stone, Chamber of Secrets, and Prisoner of Azkaban) have remained popular over time, with consistently high checkouts each year. In contrast, the later books (Half-Blood Prince and Deathly Hallows) have lower checkouts, which may be due to a combination of factors such as reader fatigue with the series or competition from other popular books.
 
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
+Another pattern that emerged is that the checkouts for each book tend to peak in the year of a major movie release. For example, the checkouts for Sorcerer's Stone and Chamber of Secrets spiked in 2020, the year that the Fantastic Beasts sequel was released, while the checkouts for Goblet of Fire spiked in 2021, the year that the 20th anniversary edition of the book was released.
 
 ``````{r, echo = FALSE, code = readLines("chart2_example.R")}
 ```
 
-### Third Chart
+### Third Trends by Material Type
 
 This bar chart gains insights into the top 6 material types that have the highest total checkouts from 2017-2023. It's specifically top 6 because 7 and onwards' numbers are too small and insignificant in relation. The chart shows that books are the most checked out material type, followed by ebooks, audiobooks, and DVDs. Magazines and music CDs have the lowest total checkouts among the top 6 materials.
 
