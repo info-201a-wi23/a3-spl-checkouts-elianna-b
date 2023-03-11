@@ -3,6 +3,10 @@ title: "A3: SPL Library Checkouts"
 output: html_document
 ---
 
+``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("summary.R")}
+
+```
+
 ### Introduction
 
 The Seattle Public Library has provided us with a dataset of items that have been checked out at least 10 times a month from 2017-2023. This dataset is a comprehensive record of popular books, media, and other materials that have been in high demand at the library over the past few years. This information is valuable for understanding the reading and media consumption habits of the Seattle community, as well as for predicting future trends in library usage.
@@ -21,7 +25,7 @@ The Seattle Public Library has provided us with a dataset of items that have bee
 
 ### Summary Information
 
-Based on the analysis of the Seattle Public Library checkouts dataset, it was found that books were the most checked out material type, still reigning supreme (ebooks have not taken over yet)! The total number of checkouts fluctuated, with 2020 being the year with the lowest number of checkouts, which is surprising since everyone was at home and presumably reading more. However, 2020 did have the most checkouts for the Harry Potter books specifically, proving that they are still remaining relevant. Ebook checkouts have been on the rise, with the least amount of ebook checkouts in 2017 and the most in 2020, which makes sense since people were sitting at home because of COVID and checking out online copies. 2020 was also the year with the most nonfiction checkouts. These findings are interesting because they suggest that 2020 was a busy year for the SPL, with high numbers of checkouts for various genres and materials. However, the total amount of checkouts was the lowest in the last 6 years.
+Based on the analysis of the Seattle Public Library checkouts dataset, it was found that the `r most_checkout_material` was the most checked out material type with `r most_checkouts` total checkouts, still reigning supreme (ebooks have not taken over yet)! The total number of checkouts fluctuated, with `r lowest_year` being the year with the lowest number of checkouts (`r lowest_checkouts` checkouts), which is surprising since everyone was at home and presumably reading more. However, `r most_hp_year` did have the most checkouts for the Harry Potter books specifically, proving that they are still remaining relevant with `r most_hp_checkouts` checkouts. Ebook checkouts have been on the rise, with the least amount of ebook checkouts in `r least_ebook_checkout_year` and the most in `r most_ebook_checkout_year`, which makes sense since people were sitting at home because of COVID and checking out online copies. `r most_nonfiction_checkout_year` was also the year with the most nonfiction checkouts (`r nonfiction_checkouts`). These findings are interesting because they suggest that 2020 was a busy year for the SPL, with high numbers of checkouts for various genres and materials. However, the total amount of checkouts was the lowest in the last 6 years.
 
 ### The Dataset
 

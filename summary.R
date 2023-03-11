@@ -21,6 +21,9 @@ most_checkout_material <- checkouts_by_material_df %>%
   filter(checkouts == max(checkouts)) %>%
   pull(MaterialType)
 
+most_checkouts <- checkouts_by_material_df %>%
+  filter(checkouts == max(checkouts)) %>% pull(checkouts)
+
 # Value 2: Total Checkouts per Year
 checkouts_by_year_df <- spl_df %>%
   group_by(CheckoutYear) %>%
@@ -30,6 +33,11 @@ lowest_year <- checkouts_by_year_df %>%
   filter(CheckoutYear != 2023) %>%
   filter(checkouts == min(checkouts)) %>%
   pull(CheckoutYear)
+
+lowest_checkouts <- checkouts_by_year_df %>%
+  filter(CheckoutYear != 2023) %>%
+  filter(checkouts == min(checkouts)) %>%
+  pull(checkouts)
 
 # Value 3: What's the year with the most checkouts for all Harry Potter books
 hp_checkouts_df <- spl_df %>%
@@ -43,6 +51,10 @@ hp_checkouts_by_year_df <- hp_checkouts_df %>%
 most_hp_year <- hp_checkouts_by_year_df %>%
   filter(checkouts == max(checkouts)) %>%
   pull(CheckoutYear)
+
+most_hp_checkouts <- hp_checkouts_by_year_df %>%
+  filter(checkouts == max(checkouts)) %>%
+  pull(checkouts)
 
 # Value 4: What is the year with the most/least checkouts for ebooks?
 ebook_checkouts_df <- spl_df %>%
@@ -68,3 +80,7 @@ nonfiction_checkouts_df <- spl_df %>%
 most_nonfiction_checkout_year <- nonfiction_checkouts_df %>%
   filter(checkouts == max(checkouts)) %>%
   pull(CheckoutYear)
+
+nonfiction_checkouts <- nonfiction_checkouts_df %>%
+  filter(checkouts == max(checkouts)) %>%
+  pull(checkouts)
